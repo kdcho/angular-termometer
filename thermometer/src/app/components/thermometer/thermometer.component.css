@@ -1,4 +1,6 @@
 .container {
+    width: 100px;
+
     & .circle {
         position: relative;
         height: 100px;
@@ -14,23 +16,27 @@
             border: solid 2px black;
             transform-origin: left center;
         }
+        &::after {
+            content: "";
+            border: solid 2px black;
+            position: absolute;
+            width: 5px;
+            left: 12%;
+            top: 80%;
+            transform: rotate(-45deg);
+        }
+        &::before {
+            content: "";
+            border: solid 2px black;
+            position: absolute;
+            width: 5px;
+            left: 80%;
+            top: 80%;
+            transform: rotate(45deg);
+        }
     }
-    .circle::after {
-        content: "";
-        border: solid 2px black;
-        position: absolute;
-        width: 5px;
-        left: 12%;
-        top: 80%;
-        transform: rotate(-45deg);
-    }
-    .circle::before {
-        content: "";
-        border: solid 2px black;
-        position: absolute;
-        width: 5px;
-        left: 80%;
-        top: 80%;
-        transform: rotate(45deg);
+
+    & .current-temperature {
+        text-align: center;
     }
 }

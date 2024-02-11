@@ -1,6 +1,9 @@
 <div class="container">
     <div class="circle">
-        <div class="pointer"></div>
+        <div
+            class="pointer"
+            [style.transform]="'rotate(' + getAngle() + 'deg)'"
+        ></div>
     </div>
-    <p class="current-temperature">22°C</p>
+    <p class="current-temperature">{{ currentTemp }}°C</p>
 </div>
