@@ -20,18 +20,18 @@
             content: "";
             border: solid 2px black;
             position: absolute;
-            width: 5px;
-            left: 12%;
-            top: 80%;
+            width: 10px;
+            left: 3%;
+            top: 90%;
             transform: rotate(-45deg);
         }
         &::before {
             content: "";
             border: solid 2px black;
             position: absolute;
-            width: 5px;
-            left: 80%;
-            top: 80%;
+            width: 10px;
+            left: 83%;
+            top: 90%;
             transform: rotate(45deg);
         }
     }

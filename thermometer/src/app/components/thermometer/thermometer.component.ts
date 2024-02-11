@@ -10,11 +10,11 @@ import { Component } from '@angular/core';
 export class ThermometerComponent {
     minTemp: number = 10;
     maxTemp: number = 2000;
-    currentTemp: number = 2000;
+    currentTemp: number = 10;
 
     getAngle(): number {
-        let minAngle: number = -222;
-        let maxAngle: number = 41;
+        let minAngle: number = -225;
+        let maxAngle: number = 45;
 
         let angle =
             minAngle +
