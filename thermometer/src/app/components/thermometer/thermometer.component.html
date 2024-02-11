@@ -1,1 +1,9 @@
-<p>thermometer works!</p>
+<div class="container">
+    <div class="circle">
+        <div
+            class="pointer"
+            [style.transform]="'rotate(' + getAngle() + 'deg)'"
+        ></div>
+    </div>
+    <p class="current-temperature">{{ currentTemp }}°C</p>
+</div>
