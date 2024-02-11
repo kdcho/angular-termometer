@@ -1,1 +1,1 @@
-# angular-termometer
+# angular-thermometer
